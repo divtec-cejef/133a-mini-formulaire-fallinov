@@ -70,4 +70,12 @@ form > ul > li {
 
 label {
     display: block;
+    margin-bottom: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input {
+    border: 2px solid #2c3e50;
+    padding: 1em;
 }
