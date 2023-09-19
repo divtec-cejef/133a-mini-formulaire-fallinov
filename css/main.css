@@ -79,7 +79,16 @@ label {
     cursor: pointer;
 }
 
-input {
+label input + span {
+    font-weight: normal;
+}
+
+label input:checked + span {
+    font-weight: bold;
+}
+
+input,
+select {
     border: 2px solid #2c3e50;
     padding: 1em;
     width: 100%;
@@ -87,4 +96,24 @@ input {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+    background-color: white;
+}
+
+label input {
+    width: auto;
+}
+
+fieldset {
+    border: 2px solid #2c3e50;
+    padding: 0 1em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 .5em;
+}
+
+fieldset label {
+    padding: 1em 0;
+    margin: 0;
 }
