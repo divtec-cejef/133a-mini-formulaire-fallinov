@@ -27,13 +27,13 @@ listeBackground.addEventListener('change', function () {
  ENVOI DU FORMULAIRE
 *****************************************/
 
-// Récupération du formulaire
+// Récupération des éléments du formulaire
 const formulaire = document.querySelector('form');
-// Récupération des champs de saisie pour le mot de passe
 const txtMdp = document.querySelector('#mot-de-passe');
 const txtConfirmMdp = document.querySelector('#confirmation');
 const btCreerCompte = document.querySelector('button[type="submit"]');
 console.log(txtMdp, txtConfirmMdp, btCreerCompte);
+
 // Ecouter un événement de type "submit" (envoi du formulaire)
 formulaire.addEventListener('submit', function (event) {
    // Stoppe l'événement par défaut (envoi du formulaire)
@@ -43,6 +43,7 @@ formulaire.addEventListener('submit', function (event) {
     alert('Les mots de passe ne correspondent pas !');
     return; // Arrête la fonction
   }
+
   alert('Compte créé avec succès !');
   btCreerCompte.classList.add('animate__heartBeat');
   // Envoye le formulaire
